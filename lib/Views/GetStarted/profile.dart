@@ -111,7 +111,7 @@ class _UserProfileState extends State<UserProfile> {
                             }
                             else{
                               await AppProvider.setName(nameText.text).then(
-                                  await AppProvider.setName(emailText.text).then(
+                                  await AppProvider.setEmail(emailText.text).then(
                                     Navigator.pushNamed(context, '/dashboard')
                                   )
                               );

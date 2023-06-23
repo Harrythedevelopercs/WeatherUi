@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:weatherapp/Model/providers.dart';
+import 'package:weatherapp/Views/Dashboard/home.dart';
 import 'package:weatherapp/Views/GetStarted/main.dart';
 import 'package:weatherapp/Views/GetStarted/profile.dart';
 import 'package:weatherapp/Views/GetStarted/setcities.dart';
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
         // When navigating to the "/second" route, build the SecondScreen widget.
         '/cities': (context) => const SetCitiesScreen(),
         '/profile': (context) => const UserProfile(),
-        '/dashboard': (context) => const UserProfile(),
+        '/dashboard': (context) => const HomeScreen(),
       },
     );
   }

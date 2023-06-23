@@ -22,8 +22,8 @@ class AppProvider{
    static setEmail(String SetEmail) async =>
        await _preferences.setString(_keyclientEmail,SetEmail);
 
-   static getEmail() => _preferences.getStringList(_keyclientEmail);
-   static getName() => _preferences.getStringList(_keyclientName);
+   static getEmail() => _preferences.getString(_keyclientEmail);
+   static getName() => _preferences.getString(_keyclientName);
 
 
 
